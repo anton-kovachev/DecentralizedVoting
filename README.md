@@ -1,13 +1,15 @@
-# Sample Hardhat Project
+# Decentralized Voting Dapp
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This project demonstrates a basic voting dapp built on Solidity with the help of hardhat and using react frontend.
 
-Try running some of the following tasks:
+To start the project follow the steps:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+```
+npm install -> to install hardhat and related dependencies
+npx hardhat node -> start a local hardhat network (local blockchain)
+add the hardhat local network to your metamask
+npx hard run ./scripts/deploy.js -> to deploy the smart contract to the local
+navigate to the frontend folder
+npm install
+npm start
 ```

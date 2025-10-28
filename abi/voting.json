@@ -1,0 +1,28 @@
+{
+  "network": "localhost",
+  "contract": {
+    "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "signerAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "abi": [
+      "constructor()",
+      "error Voting_AlreadyAMember_Error(address caller, string message)",
+      "error Voting_AlreadyVoted_Error(address voter, uint256 voteId, string message)",
+      "error Voting_Ended_Error(address voter, uint256 voteId, string message)",
+      "error Voting_InvalidVote_Error(address voter, uint256 voteId, string message)",
+      "error Voting_NotAMember_Error(address caller, string message)",
+      "error Voting_OptionsRange_Error(address voter, uint256 minOptions, uint256 maxOptions, string message)",
+      "error Voting_VoteCreatorsVote_Error(address voter, string message)",
+      "error Voting_VoteOptionInvalid_Error(address voter, uint256 voteId, uint8 option, string message)",
+      "event Member_Joined(address indexed newMember, uint256 timestamp)",
+      "event Vote_Created(address indexed owner, uint256 voteId, uint8 options, uint256 time, uint256 endtime)",
+      "event Voted(address indexed voter, uint256 voteId, uint8 voteOption)",
+      "function createVote(string url, uint256 endTime, uint8 options) returns (uint256 voteId)",
+      "function didVote(address member, uint256 voteId) view returns (bool)",
+      "function getVote(uint256 voteId) view returns (string url, address owner, uint8 options, uint256 createdAt, uint256 endTime, uint256[] optionsVotes)",
+      "function getVoteOptionVotes(uint256 voteId, uint8 option) view returns (uint256 optionVotes)",
+      "function isMember(address addr) view returns (bool member)",
+      "function join()",
+      "function vote(uint256 voteId, uint8 option)"
+    ]
+  }
+}
